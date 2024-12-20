@@ -6,6 +6,7 @@ void mostrar_menu_principal() {
     do {
         printf("\n--- Conversor de Unidades ---\n");
         printf("1. Conversao de Comprimento\n");
+        printf("2. Conversao de Dados\n");
         printf("0. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
@@ -13,6 +14,9 @@ void mostrar_menu_principal() {
         switch (opcao) {
             case 1:
                 menu_comprimento();
+                break;
+            case 2:
+                menu_dados();
                 break;
             case 0:
                 printf("Encerrando o programa...\n");
