@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "conversoes.h"
 
 // Declaração das funções de conversão
 float converter_kmh_para_ms(float kmh);
