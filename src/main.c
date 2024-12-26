@@ -9,6 +9,8 @@ void mostrar_menu_principal() {
         printf("2. Conversao de Dados\n");
         printf("3. Conversao de Area\n");
         printf("4. Conversao de Massa\n");
+        printf("5. Conversao de Volume\n");
+        printf("6. Conversao de Temperatura\n");
         printf("0. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
