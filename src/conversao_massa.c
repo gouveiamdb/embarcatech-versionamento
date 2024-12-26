@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "conversoes.h"
 
-// Declarações das funções
 void menu_massa();
 void exibirMenu();
 double converterMassa(double valor, int unidadeOrigem, int unidadeDestino);
@@ -18,12 +17,12 @@ void menu_massa() {
     int unidadeOrigem, unidadeDestino;
     double valor, resultado;
 
-    printf("Conversor de Unidades de Massa\n\n");
+    printf("--- Conversao de Massa --- \n");
     
     // Entrada do valor
     printf("Digite o valor da massa: ");
     if (scanf("%lf", &valor) != 1) {
-        printf("Entrada inválida!\n");
+        printf("Entrada invalida!\n");
         return;
     }
 
@@ -32,14 +31,14 @@ void menu_massa() {
     exibirMenu();
     printf("Opção: ");
     if (scanf("%d", &unidadeOrigem) != 1 || unidadeOrigem < 1 || unidadeOrigem > 3) {
-        printf("Unidade de origem inválida!\n");
+        printf("Unidade de origem invalida!\n");
         return;
     }
 
     // Exibir menu e obter unidade de destino
     printf("\nEscolha a unidade de destino:\n");
     exibirMenu();
-    printf("Opção: ");
+    printf("Opcao: ");
     if (scanf("%d", &unidadeDestino) != 1 || unidadeDestino < 1 || unidadeDestino > 3) {
         printf("Unidade de destino inválida!\n");
         return;
@@ -52,7 +51,7 @@ void menu_massa() {
     if (resultado != -1) {
         printf("\n%.2lf na unidade %d equivale a %.2lf na unidade %d.\n", valor, unidadeOrigem, resultado, unidadeDestino);
     } else {
-        printf("\nConversão inválida!\n");
+        printf("\nConversão invalida!\n");
     }
 
     // Finaliza a execução de forma limpa
@@ -117,11 +116,11 @@ double converterMassa(double valor, int unidadeOrigem, int unidadeDestino) {
             }
             break;
         default:
-            printf("Unidade inválida!\n");
+            printf("Unidade invalida!\n");
             return -1;
     }
 
-    printf("Conversão não suportada!\n");
+    printf("Conversao nao suportada!\n");
     return -1;
 }
 
