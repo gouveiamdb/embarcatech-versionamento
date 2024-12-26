@@ -11,6 +11,7 @@ void mostrar_menu_principal() {
         printf("4. Conversao de Massa\n");
         printf("5. Conversao de Volume\n");
         printf("6. Conversao de Temperatura\n");
+        printf("7. Conversao de Velocidade\n");
         printf("0. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
@@ -31,6 +32,8 @@ void mostrar_menu_principal() {
                 menu_volume();
             case 6:
                 menu_temperatura();
+            case 7:
+                menu_velocidade();
             case 0:
                 printf("Encerrando o programa...\n");
                 break;
