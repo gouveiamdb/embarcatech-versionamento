@@ -66,14 +66,6 @@ Este projeto é um conversor de unidades desenvolvido em C que permite realizar 
 ```
 conversor-unidades/
 ├── bin/                    # Arquivos binários compilados
-├── include/               # Arquivos de cabeçalho (.h)
-│   ├── conversao_area.h
-│   ├── conversao_comprimento.h
-│   ├── conversao_dados.h
-│   ├── conversao_massa.h
-│   ├── conversao_temperatura.h
-│   ├── conversao_velocidade.h
-│   └── conversao_volume.h
 ├── src/                   # Código-fonte (.c)
 │   ├── main.c
 │   ├── conversao_area.c
@@ -82,9 +74,12 @@ conversor-unidades/
 │   ├── conversao_massa.c
 │   ├── conversao_temperatura.c
 │   ├── conversao_velocidade.c
-│   └── conversao_volume.c
+│   ├── conversao_volume.c
+│   ├── conversoes.h        # Arquivo de cabeçalho
+│   └── main.c
 ├── test/                  # Arquivos de teste
 ├── docs/                  # Documentação adicional
+├── obj/ 
 └── README.md             # Este arquivo
 ```
 
@@ -100,8 +95,8 @@ conversor-unidades/
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/conversor-unidades.git
-cd conversor-unidades
+git clone https://github.com/gouveiamdb/embarcatech-versionamento
+cd embarcatech-versionamento
 ```
 
 2. Crie o diretório bin (se não existir):
@@ -175,7 +170,6 @@ O programa inclui tratamento para:
 ## 🔄 Versionamento
 
 - Versão atual: 1.0.0
-- Changelog disponível em docs/CHANGELOG.md
 
 ## 📜 Licença
 
@@ -190,8 +184,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 - Marcelo Barbosa Almeida - Conversão de Volume - https://github.com/marcelofainor
 - Marcelo Barbosa Almeida - Conversão de Temperatura - https://github.com/marcelofainor
 - Levi Silva Freitas - Conversão de Velocidade - https://github.com/Lvi01
-- #Alécio Vinicius Oliveira Silva - Conversão de Watts, quilowatts e cavalos-vapor - https://github.com/Al3ci0
-- #Joel Junior Nunes Araujo - Interface de usuário - https://github.com/eijoeljunior289
+- Alécio Vinicius Oliveira Silva - Conversão de Watts, quilowatts e cavalos-vapor - https://github.com/Al3ci0
+- Joel Junior Nunes Araujo - Interface de usuário - https://github.com/eijoeljunior289
 
 ## 📞 Suporte
 
