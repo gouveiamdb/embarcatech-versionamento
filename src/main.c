@@ -27,6 +27,10 @@ void mostrar_menu_principal() {
                 break;
             case 4:
                 menu_massa();
+            case 5:
+                menu_volume();
+            case 6:
+                menu_temperatura();
             case 0:
                 printf("Encerrando o programa...\n");
                 break;
