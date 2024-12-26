@@ -11,22 +11,22 @@ int aproximadamente_igual(double a, double b) {
 
 void test_converter_dados() {
     // Teste de bits para bytes
-    assert(aproximadamente_igual(converter_dados(8.0, 0, 1), 1.0));
+    assert(aproximadamente_igual(converter_dados(8.0, 0, 1), 1));
     
     // Teste de bytes para kilobytes
-    assert(aproximadamente_igual(converter_dados(1024.0, 1, 2), 1.0));
+    assert(aproximadamente_igual(converter_dados(1024, 1, 2), 1));
     
     // Teste de kilobytes para megabytes
-    assert(aproximadamente_igual(converter_dados(1024.0, 2, 3), 1.0));
+    assert(aproximadamente_igual(converter_dados(1024, 2, 3), 1));
     
     // Teste de megabytes para gigabytes
-    assert(aproximadamente_igual(converter_dados(1024.0, 3, 4), 1.0));
+    assert(aproximadamente_igual(converter_dados(1024, 3, 4), 1));
     
     // Teste bytes para bits
-    assert(aproximadamente_igual(converter_dados(1.0, 1, 0), 8.0));
+    assert(aproximadamente_igual(converter_dados(1, 1, 0), 8));
     
     // Teste com zero
-    assert(aproximadamente_igual(converter_dados(0.0, 0, 1), 0.0));
+    assert(aproximadamente_igual(converter_dados(0, 0, 1), 0));
     
     printf("✓ Todos os testes de conversão de dados passaram!\n");
 }
