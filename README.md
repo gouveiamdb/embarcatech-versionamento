@@ -150,14 +150,6 @@ git push origin feature/nova-conversao
 ```
 5. Abra um Pull Request
 
-## 📝 Padrões de Código
-
-- Indentação: 4 espaços
-- Nomes de funções: snake_case
-- Nomes de variáveis: snake_case
-- Constantes: MAIÚSCULAS_COM_UNDERSCORE
-- Comentários: em português, explicando a lógica
-- Documentação de funções: estilo Doxygen
 
 ## 🐛 Tratamento de Erros
 
@@ -186,6 +178,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 - Levi Silva Freitas - Conversão de Velocidade - https://github.com/Lvi01
 - Alécio Vinicius Oliveira Silva - Conversão de Watts, quilowatts e cavalos-vapor - https://github.com/Al3ci0
 - Joel Junior Nunes Araujo - Interface de usuário - https://github.com/eijoeljunior289
+- Maria Luiza Lemos Peixoto - https://github.com/mluizalpx
 
 ## 📞 Suporte
 
