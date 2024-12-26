@@ -9,22 +9,11 @@ float converter_mph_para_kmh(float mph);
 float converter_ms_para_mph(float ms);
 float converter_mph_para_ms(float mph);
 
-//Declaração da função de retorno, com base no caso selecionado
-void coletar_dados(int *opcao, float *valor);
-void realizar_conversao(int opcao, float valor);
-
-int main() {
+void menu_velocidade() {
     int opcao;     // Opção escolhida pelo usuário
     float valor;   // Valor inserido para conversão
 
-    coletar_dados(&opcao, &valor);  // Coleta as entradas do usuário
-    realizar_conversao(opcao, valor);  // Realiza a conversão com base na entrada
-
-    return 0;
-}
-
-// Função para coletar dados do usuário
-void coletar_dados(int *opcao, float *valor) {
+    // Menu de opções
     printf("\n--- Conversao de Velociade ---\n");
     printf("Escolha uma das opções de conversão:\n");
     printf("1 - Converter de Quilômetro por hora (km/h) para Metro por segundo (m/s)\n");
@@ -37,22 +26,20 @@ void coletar_dados(int *opcao, float *valor) {
     // Loop para garantir entrada válida
     do {
         printf("Digite o número da conversão desejada (1-6): ");
-        scanf("%d", opcao);
-        if (*opcao < 1 || *opcao > 6) {
+        scanf("%d", &opcao);
+        if (opcao < 1 || opcao > 6) {
             printf("Opção inválida! Por favor, tente novamente.\n");
         }
-    } while (*opcao < 1 || *opcao > 6);
+    } while (opcao < 1 || opcao > 6);
 
     printf("Digite o valor a ser convertido: ");
-    scanf("%f", valor);
-    if (*valor < 0) {
+    scanf("%f", &valor);
+    if (valor < 0) {
         printf("Valor negativo! Considerando módulo do número.\n");
-        *valor = *valor * -1;
+        valor = valor * -1;
     }
-}
 
-// Função para realizar a conversão com base na opção escolhida
-void realizar_conversao(int opcao, float valor) {
+    // Prints de saida
     switch (opcao) {
         case 1:
             printf("%.2f km/h equivale a %.2f m/s\n", valor, converter_kmh_para_ms(valor));
@@ -73,6 +60,7 @@ void realizar_conversao(int opcao, float valor) {
             printf("%.2f mph equivale a %.2f m/s\n", valor, converter_mph_para_ms(valor));
             break;
     }
+
 }
 
 // Função para converter de quilômetros por hora (km/h) para metros por segundo (m/s)
