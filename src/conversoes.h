@@ -3,5 +3,6 @@
 
 void menu_comprimento();
 void menu_dados();
+void menu_area();
 
 #endif
