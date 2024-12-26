@@ -173,8 +173,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 - Pedro Henrique Ferreira Amorim da Silva - Conversão de Área - https://github.com/PedroHenriqueFAS
 - Matheus Gouveia de Deus Bastos - Conversão de Dados - https://github.com/gouveiamdb
 - Naylane do Nascimento Ribeiro - Conversão de Massa - https://github.com/naylane
-- Marcelo Barbosa Almeida - Conversão de Volume - https://github.com/marcelofainor
-- Marcelo Barbosa Almeida - Conversão de Temperatura - https://github.com/marcelofainor
+- Marcelo Barbosa de Almeida - Conversão de Volume - https://github.com/marcelofainor
+- Marcelo Barbosa de Almeida - Conversão de Temperatura - https://github.com/marcelofainor
 - Levi Silva Freitas - Conversão de Velocidade - https://github.com/Lvi01
 - Alécio Vinicius Oliveira Silva - Conversão de Watts, quilowatts e cavalos-vapor - https://github.com/Al3ci0
 - Joel Junior Nunes Araujo - Interface de usuário - https://github.com/eijoeljunior289
